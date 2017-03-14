@@ -1,0 +1,729 @@
+/* @media screen and (min-width:1200px) {}*/
+
+
+/* @media screen and (min-width:980px) and (max-width:1199px) {}*/
+
+
+/* @media screen and (min-width:980px) {}*/
+
+
+/* @media screen and (min-width:768px) and (max-width:979px) {}*/
+
+
+/* @media screen and (max-width:979px) {}*/
+
+
+/* @media screen and (max-width:767px) {}*/
+
+
+/* @media screen and (max-width:640px) {}*/
+
+
+/* @media screen and (max-width:480px) {}*/
+
+@baseColor: #1DC5FC;
+@footerColor: #333;
+.container {
+    margin: 0 auto;
+    max-width: 96%;
+    width: 1000px;
+}
+
+// banner
+.banner-box {
+    overflow: hidden;
+    a {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+// 首页
+.eqidian-home {
+    font-size: 14px;
+    // business guide
+    .business-guide {
+        .item {
+            float: left;
+            margin: 80px 1% 0;
+            width: 48%;
+            // box-shadow: 0 0 2px #eee;
+            a {
+                display: block;
+                // width: 100%;
+                min-height: 100px;
+                position: relative;
+                padding-left: 100px;
+                padding-right: 10px;
+                transition: all .3s;
+                background: #FFF;
+                &:hover {
+                    // position: relative;
+                    // box-shadow: 0 5px 20px #ccc;
+                    // transform: scale(1.2);
+                    // border-radius: 4px;
+                    // z-index: 999;
+                    .icon-image {
+                        background-color: #FFF;
+                        background-size: 60px;
+                        &.pinpai {
+                            background-image: url(../image/business-icon/pinpai_active.png);
+                        }
+                        &.jingzhun {
+                            background-image: url(../image/business-icon/jingzhun_active.png);
+                        }
+                        &.xiaoguo {
+                            background-image: url(../image/business-icon/xiaoguo_active.png);
+                        }
+                        &.faxing {
+                            background-image: url(../image/business-icon/faxing_active.png);
+                        }
+                    }
+                }
+                .icon-image {
+                    position: absolute;
+                    height: 80px;
+                    width: 80px;
+                    left: 10px;
+                    top: 50%;
+                    margin-top: -40px;
+                    border-radius: 50%;
+                    transition: all .6s;
+                    background-color: @baseColor;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 40px;
+                    &.pinpai {
+                        background-image: url(../image/business-icon/pinpai.png);
+                    }
+                    &.jingzhun {
+                        background-image: url(../image/business-icon/jingzhun.png);
+                    }
+                    &.xiaoguo {
+                        background-image: url(../image/business-icon/xiaoguo.png);
+                    }
+                    &.faxing {
+                        background-image: url(../image/business-icon/faxing.png);
+                    }
+                }
+                .desc {
+                    padding: 10px 0;
+                    .tit {
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+                    .desc-text {
+                        line-height: 180%;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+
+    // partner
+    .partner {
+        margin-top: 60px;
+        // background-color: #EEE;
+        .container {
+            overflow: hidden;
+            .tit {
+                margin-bottom: 10px;
+                padding-left: 10px;
+                height: 20px;
+                line-height: 22px;
+                font-size: 16px;
+                font-weight: 700;
+                border-left: 2px solid @baseColor;
+            }
+            .swiper-container-partner {
+                .swiper-slide {
+                    background-color: #eee;
+                    padding: 10px 0;
+                    border-radius: 3px;
+                    border: 1px solid #e1e1e1;
+                    box-sizing: border-box;
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:480px) {
+        // banner
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-size: 14px auto;
+        }
+
+        // business guide
+        .business-guide {
+            .item {
+                margin: 10px 0 0;
+                width: 100%;
+                a {
+                    padding-left: 80px;
+                    background-color: #FFF;
+                    background-size: 40px;
+                    .icon-image {
+                        position: absolute;
+                        height: 60px;
+                        width: 60px;
+                        margin-top: -30px;
+                        background-color: #FFF;
+                        background-size: 40px;
+                        border-radius: 0;
+                        &.pinpai {
+                            background-image: url(../image/business-icon/pinpai_active.png);
+                        }
+                        &.jingzhun {
+                            background-image: url(../image/business-icon/jingzhun_active.png);
+                        }
+                        &.xiaoguo {
+                            background-image: url(../image/business-icon/xiaoguo_active.png);
+                        }
+                        &.faxing {
+                            background-image: url(../image/business-icon/faxing_active.png);
+                        }
+                    }
+                }
+            }
+        }
+
+        // partner
+        .partner {
+            margin-top: 20px;
+        }
+    }
+}
+
+// 业务介绍
+.eqidian-business{
+
+    @media screen and (max-width: 480px) {
+        .business-box{
+            .item{
+                padding: 0 15px;
+                position: static;
+                margin-top: 30px;
+                min-height:100px;
+                clear: both;
+                // 辅助图片
+                .desc-img{
+                    position: static;
+                    margin: 0 auto;
+                    display: block;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    img{
+                        display: block;
+                        margin: 0 auto;
+                        height: 120px;
+                        max-width: 80%;
+                    }
+                }
+                // 描述
+                .description{
+                    position: static;
+                    .tit{
+                        color: #333;
+                        height: 60px;
+                        line-height: 60px;
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                    .desc-text{
+                        font-size: 14px;
+                        line-height: 180%;
+                        color: #999;
+                        // text-shadow: 1px 1px 2px #d8d8d8;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:480px) and (max-width:640px){
+        .business-box{
+            .item{
+                position: relative;
+                margin-top: 0;
+                // padding: 20px 10px;
+                min-height: 200px;
+                // box-shadow: 0 2px 10px #eee;
+                display: flex;
+                align-items: center;
+                transition: all .6s;
+                // 辅助图片
+                .desc-img{
+                    position: absolute;
+                    top: 50%;
+                    width: 160px;
+                    transform: translateY(-50%);
+                    img{
+                        display: block;
+                        margin: 0 auto;
+                        // height: 100%;
+                        max-height: 100%;
+                        max-width: 100%;
+                    }
+                }
+                // 描述
+                .description{
+                    .tit{
+                        color: #333;
+                        height: 60px;
+                        line-height: 60px;
+                        font-size: 22px;
+                    }
+                    .desc-text{
+                        line-height: 160%;
+                        color: #999;
+                        font-size: 14px;
+                        // text-shadow: 1px 1px 2px #d8d8d8;
+                    }
+                }
+
+                // 辅助图片居左
+                &.item-img-right{
+                    padding-right: 200px;
+                    // 辅助图片
+                    .desc-img{
+                        right: 20px;
+                    }
+                }
+                // 辅助图片居右
+                &.item-img-left{
+                    padding-left: 200px;
+                    // 辅助图片
+                    .desc-img{
+                        left: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:640px){
+        .business-box{
+            .item{
+                position: relative;
+                margin-top: 20px;
+                padding: 20px;
+                min-height:240px;
+                // box-shadow: 0 2px 10px #eee;
+                display: flex;
+                align-items: center;
+                transition: all .6s;
+                &:hover{
+                    // transform: scale(1.2);
+                    box-shadow: 0 8px 20px #999;
+                    border-radius: 6px;
+                }
+                // 辅助图片
+                .desc-img{
+                    position: absolute;
+                    top: 50%;
+                    height: 240px;
+                    width: 360px;
+                    margin-top: -120px;
+                    img{
+                        display: block;
+                        margin: 0 auto;
+                        height: 100%;
+                        max-width: 100%;
+                    }
+                }
+                // 描述
+                .description{
+                    .tit{
+                        color: #333;
+                        height: 60px;
+                        line-height: 60px;
+                        font-size: 22px;
+                    }
+                    .desc-text{
+                        line-height: 200%;
+                        color: #999;
+                        // text-shadow: 1px 1px 2px #d8d8d8;
+                    }
+                }
+
+                // 辅助图片居左
+                &.item-img-right{
+                    padding-right: 400px;
+                    // 辅助图片
+                    .desc-img{
+                        right: 20px;
+                    }
+                }
+                // 辅助图片居右
+                &.item-img-left{
+                    padding-left: 400px;
+                    // 辅助图片
+                    .desc-img{
+                        left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 成功案例
+.eqidian-case{
+    .group{
+        margin-top: 15px;
+        .title{ 
+            margin: 15px 0;
+            height: 20px; 
+            line-height: 22px;
+            font-weight: 700;
+            font-size: 16px;
+            text-indent: 15px;
+            border-left: 4px solid @baseColor;
+        }
+        .items{
+            .item{
+                float: left;
+                width: 25%;
+                padding: 0 15px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                .card{
+                    position: relative;
+                    box-shadow: 0 2px 20px #CCC;
+                    border: 1px solid #CCC;
+                    padding: 5px 5px 40px 5px;
+                    box-sizing: 10px;
+                    border-radius: 4px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    .img-box{
+                        img{
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                    .desc-text{
+                        position: absolute;
+                        left: -15px;
+                        right: -15px;
+                        bottom: 0;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;                        
+                        background: #FFF;
+                        z-index: 999;
+                    }
+                    .hide-box{
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        right: 0;
+                        height: 100%;
+                        transition: background 2s, top .8s, font-size .8s;
+                        background: rgba(0,0,0,0);
+                        z-index: 88;
+                        border-radius: 4px;
+                        font-size: 26px;
+                        a{
+                            display: block;
+                            height: 100%;
+                            width: 100%;
+                            text-align: center;
+                            color: #FFF;
+                            line-height: 200px;
+                        }
+                    }
+                    &:hover{
+                        .hide-box{
+                            top: 0;
+                            bottom: 0;
+                            background: rgba(0,0,0,.6);
+                            font-size: 16px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:480px){
+        .group{
+            margin-top: 0;
+            .title{ 
+                margin: 10px 0;
+            }
+            .items{
+                .item{
+                    padding: 0 10px;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+// 关于我们
+.eqidian-about-us{
+    .company-text{
+        margin-top: 20px;
+        .title{
+            margin: 15px 0;
+            height: 20px; 
+            line-height: 22px;
+            font-weight: 700;
+            font-size: 16px;
+            text-indent: 15px;
+            border-left: 4px solid @baseColor;
+        }
+        .desc-text{
+            line-height: 180%;
+            color: #666;
+        }
+    }
+
+    .description-group{
+        margin-top: 40px;
+        .box{
+            width: 46%;
+            height: 440px;
+            position: relative;
+            overflow: hidden;
+            &.box-business{background: url(../image/about_us_1.png) no-repeat center top; background-size:  auto 100%; }
+            &.box-team{background: url(../image/about_us_2.png) no-repeat center top; background-size:  auto 100%;}
+            border-radius: 6px 6px 0 0;
+            overflow: hidden;
+            .title-box{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background: #1dc5fc;
+                z-index: 99;
+                h3{
+                    font-size: 18px;
+                    height: 50px;
+                    line-height: 50px;
+                    color: #FFF;
+                }
+                p{
+                    height: 36px;
+                    line-height: 20px;
+                }
+            }
+            .hide-box{
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                background: rgba(255,255,255,0);
+                z-index: 98;
+                line-height: 30px;
+                padding: 20px;
+                box-sizing: border-box;
+                transition: all .6s;
+            }
+            &:hover{
+                cursor: pointer;
+                .hide-box{
+                    top: 0;
+                    bottom: 0;
+                    background: rgba(0,0,0,.6);
+                    color: #FFF;
+                }
+            }
+        }
+
+        @media screen and (max-width:480px){
+            .box{
+                margin: 10px 5%;
+                width: 90%;
+                position: relative;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+// ===========  公共样式（顶部导航，页脚） ============
+
+// 顶部导航
+header {
+    // pc 导航
+    &.pc-nav {
+        // display: none;
+        box-shadow: 0 2px 6px #eee;
+        .logo {
+            float: left;
+            height: 80px;
+            a {
+                display: block;
+                img {
+                    margin: 15px 0;
+                    display: block;
+                    height: 50px;
+                }
+            }
+        }
+        nav {
+            float: right;
+            height: 80px;
+            .nav-box {
+                li {
+                    float: left;
+                    height: 80px;
+                    a {
+                        display: block;
+                        padding: 0 15px;
+                        margin: 15px 0;
+                        height: 48px;
+                        border-bottom: 2px solid #FFF;
+                        line-height: 50px;
+                        font-size: 16px;
+                        transition: all .3s;
+                        // border-radius: 4px;
+                        &.active,
+                        &:hover {
+                            // background: #1dc5fc;
+                            // color: #FFF;
+                            height: 48px;
+                            // border-bottom: 2px solid #1dc5fc;
+                            color: @baseColor;
+                            // font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 移动导航
+    &.mobile-nav {
+        display: none;
+        position: relative;
+        width: 100%;
+        .logo {
+            padding-left: 10px;
+            height: 50px;
+            a {
+                display: block;
+                float: left;
+                img {
+                    margin: 10px 0;
+                    display: block;
+                    height: 30px;
+                }
+            }
+            .right-menu {
+                float: right;
+                width: 50px;
+                height: 50px;
+                background: #FFF url(../image/menu.png) no-repeat center;
+                background-size: 24px auto;
+            }
+        }
+        nav {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            // box-shadow: 0 2px 20px rgba(0, 0, 0, .76);
+            // border-radius: 0 0 6px 6px;
+            overflow: hidden;
+            .nav-box {
+                border-bottom: 1px solid @baseColor;
+                li {
+                    // background: rgba(0, 0, 0, .76);
+                    background: rgba(255, 255, 255, .8);
+                    padding: 0 10px;
+                    border: none;
+                    &:not(:last-child) {
+                        a {
+                            display: block;
+                            position: relative;
+                            // border-bottom: 1px dashed rgba(148, 148, 148, 0.38);
+                            border-bottom: 1px dashed rgb(29, 197, 252);
+                            box-sizing: border-box;
+                            &:after {
+                                content: '';
+                                display: block;
+                                width: 100%;
+                                height: 0;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                // border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+                            }
+                        }
+                    }
+                    a {
+                        display: block;
+                        height: 100%;
+                        line-height: 46px;
+                        font-size: 14px;
+                        transition: all .3s;
+                        color: #333;
+                        border: none;
+                        &.active,
+                        &:hover {
+                            color: #00a4da;
+                            // color: @baseColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 页脚
+footer {
+    margin-top: 50px;
+    padding: 30px 0 20px;
+    background: @footerColor;
+    color: #FFF;
+    font-size: 12px;
+    p {
+        margin: 10px 0;
+        line-height: 140%;
+        a {
+            display: inline-block;
+            color: #CCC;
+            &:hover {
+                color: #FFF;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// header and footer 自适应
+@media screen and (max-width:480px) {
+    // header
+    header {
+        &.pc-nav {
+            display: none;
+        }
+        &.mobile-nav {
+            display: block;
+        }
+    }
+    // footer
+    footer {
+        margin-top: 20px;
+    }
+}

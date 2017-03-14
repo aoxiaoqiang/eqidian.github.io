@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Layer</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/eqidian.layer.css">
+    <script type="text/javascript" src="js/eqidian.layer.js"></script>
+
+</head>
+
+<body>
+    <button class="btn-open">打开提示</button>
+</body>
+
+</html>
+<script type="text/javascript">
+// 为按钮绑定事件触发弹窗
+var btn = document.querySelector('.btn-open');
+btn.addEventListener('click', function() {
+    new YungouLayer({
+        // type: 'info',
+        title: '普通提示框',
+        text: '一起云购提示一起云购提示一起云购提示 Layer 组件',
+        isTextCenter: true,
+        btns: ['狠心离开', '积极参与'],
+        ok: function(){
+            new YungouLayer({ 
+                type:'info', 
+                text:'你选择了确定', 
+                btns: ['确定'], 
+                isTextCenter: true
+            }).show();
+        },
+        cancel: function(){
+            alert('haha');
+        }
+    }).show();
+});
+</script>
